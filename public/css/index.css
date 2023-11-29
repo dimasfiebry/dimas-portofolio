@@ -1,0 +1,216 @@
+@keyframes blink {
+    0% {
+        filter: brightness(0);
+    }
+
+
+
+    80% {
+        filter: brightness(3);
+        filter: blur(10);
+
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+html,
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'plus Poppins', sans-serif;
+    background-color: rgb(0, 0, 0);
+    padding: auto;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.hi {
+    text-shadow: 1px 1px 4px rgb(198, 39, 226);
+
+}
+
+
+
+
+
+/* .deskripsi:has(.ub:hover) {
+    opacity: 60%;
+} */
+
+.deskripsi:has(.ub:hover):not(.ub) {
+    color: rgba(190, 190, 190, 0.578);
+}
+
+.ub {
+    position: relative;
+    display: inline-block;
+
+}
+
+.ub::after {
+    content: '';
+    position: absolute;
+
+
+    transform: translateY(-140%);
+
+    background-image: url('../../assets/img/Logo_Universitas_Brawijaya.svg-2.png');
+    background-size: cover;
+    background-position: end;
+    width: 80px;
+    height: 80px;
+
+    opacity: 0;
+}
+
+.ub:hover::after {
+    margin-left:100px;
+    opacity: 1;
+    animation: blink 2s alternate;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+.deskripsi2:has(.now:hover) {
+    color: rgba(190, 190, 190, 0.578);
+}
+
+.now {
+    position: relative;
+    display: inline-block;
+
+}
+
+.now::after {
+    content: '';
+    position: absolute;
+
+    
+    
+    transform: translateY(170%);
+    
+    
+    
+
+    background-image: url('../../assets/img/now.png');
+    background-size: cover;
+    background-position: end;
+    width: 100px;
+    height: 80px;
+
+
+    opacity: 0;
+}
+
+.now:hover::after {
+    margin-left: 120px;
+    opacity: 1;
+    animation: blink 2s alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.deskripsi2:has(.front:hover) {
+    color: rgba(190, 190, 190, 0.578);
+}
+
+
+
+
+/* front */
+.front {
+    position: relative;
+    display: inline-block;
+
+}
+.front::after {
+    content: '';
+    position: absolute;
+    transform: translateY(70%);
+    background-image: url('../../assets/img/undraw_speech_to_text_re_8mtf.svg');
+    background-size: cover;
+    background-position: end;
+    width: 100px;
+    height: 80px;
+    opacity: 0;
+}
+
+
+.front:hover::after {
+    margin-left: 60px;
+    opacity: 1;
+    animation: blink 2s alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.container-sosmed:hover .teks{
+    opacity: 1;
+    display: inline;
+}
+
+
+
+/* web */
+
+.web {
+    position: relative;
+    display: inline-block;
+
+}
+.web::after {
+    content: '';
+    position: absolute;
+    transform: translateY(-140%);
+    background-image: url('../../assets/img/web.svg');
+    background-size: cover;
+    background-position: end;
+    width: 100px;
+    height: 80px;
+    opacity: 0;
+}
+
+
+.web:hover::after {
+    margin-left: 180px;
+    opacity: 1;
+    animation: blink 2s alternate;
+    animation-timing-function: ease-in-out;
+}
+
+/* app */
+
+.app {
+    position: relative;
+    display: inline-block;
+
+
+}
+.app::after {
+    content: '';
+    position: absolute;
+    transform: translateY(-150%);
+    background-image: url('../../assets/img/app.svg');
+    background-size: cover;
+    width: 100px;
+    height: 80px;
+    opacity: 0;
+}
+
+
+.app:hover::after {
+    margin-right: 120px;
+    opacity: 1;
+    animation: blink 2s alternate;
+    animation-timing-function: ease-in-out;
+}
