@@ -1,3 +1,5 @@
+
+
 @keyframes blink {
     0% {
         filter: brightness(0);
@@ -65,7 +67,7 @@ a {
 
     transform: translateY(-140%);
 
-    background-image: url('../../assets/img/Logo_Universitas_Brawijaya.svg-2.png');
+    background-image: url('../img/Logo_Universitas_Brawijaya.svg-2.png');
     background-size: cover;
     background-position: end;
     width: 80px;
@@ -104,7 +106,7 @@ a {
     
     
 
-    background-image: url('../../assets/img/now.png');
+    background-image: url('../img/now.png');
     background-size: cover;
     background-position: end;
     width: 100px;
@@ -138,7 +140,7 @@ a {
     content: '';
     position: absolute;
     transform: translateY(70%);
-    background-image: url('../../assets/img/undraw_speech_to_text_re_8mtf.svg');
+    background-image: url('../img/undraw_speech_to_text_re_8mtf.svg');
     background-size: cover;
     background-position: end;
     width: 100px;
@@ -172,7 +174,7 @@ a {
     content: '';
     position: absolute;
     transform: translateY(-140%);
-    background-image: url('../../assets/img/web.svg');
+    background-image: url('../img/web.svg');
     background-size: cover;
     background-position: end;
     width: 100px;
@@ -200,7 +202,7 @@ a {
     content: '';
     position: absolute;
     transform: translateY(-150%);
-    background-image: url('../../assets/img/app.svg');
+    background-image: url('../img/app.svg');
     background-size: cover;
     width: 100px;
     height: 80px;
